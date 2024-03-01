@@ -1,0 +1,13 @@
+form {
+    border: 1px solid;
+    width: 25%;
+    margin: 20px;
+    box-shadow: 0 0 40px rgb(8, 6, 149);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 20px;
+    border: 4 solid;
+}
+div {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
