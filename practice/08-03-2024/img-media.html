@@ -10,29 +10,30 @@
         }
 
         /* laptop */
-        @media screen and (max-width: 769px) {
-            .img {
-                width: 25%;
+        @media only screen and (min-width: 701px) {
+            .img-text {
+                max-width: 25%;
             }
         }
 
         /* ipad */
-        @media screen and (min-width: 577px) and (max-width: 768px) {
-            .img {
-                width: 50%;
+        @media only screen and (max-width: 700px) {
+            .img-text {
+                max-width: 50%;
             }
         }
 
         /* smartphone */
-        @media screen and (max-width: 576px) {
-            .img {
-                width: 100%;
+        @media only screen and (max-width: 500px) {
+            .img-text {
+                max-width: 100%;
             }
         }
 
         .img {
             padding: 3%;
             border: 1px solid #9b9797;
+            background-color: rgb(213, 226, 245);
         }
 
         .img:hover {
@@ -41,6 +42,7 @@
 
         .img img {
             max-width: 100%;
+            height: auto;
         }
 
         .text {
@@ -48,10 +50,7 @@
             text-align: center;
         }
 
-        .img-text1,
-        .img-text2,
-        .img-text3,
-        .img-text4 {
+        .img-text {
             padding: 0 6px;
             float: left;
             max-width: 25%;
@@ -69,7 +68,7 @@
     <h2>Responsive Image Gallery</h2>
     <h4>Resize the browser window to see the effect.</h4>
 
-    <div class="img-text1">
+    <div class="img-text">
         <div class="img">
             <img src="img_fjords.jpg" alt="Trolltunga Norway" title="Trolltunga Norway">
 
@@ -78,22 +77,21 @@
         </div>
     </div>
 
-
-    <div class="img-text2">
+    <div class="img-text">
         <div class="img">
             <img src="img_forest.jpg" alt="Forest" title="Forest">
             <div class="text">Add a description of the image here</div>
         </div>
     </div>
 
-    <div class="img-text3">
+    <div class="img-text">
         <div class="img">
             <img src="img_lights.jpg" alt="Northern Lights" title="Northern Lights">
             <div class="text">Add a description of the image here</div>
         </div>
     </div>
 
-    <div class="img-text4">
+    <div class="img-text">
         <div class="img">
             <img src="img_mountains.jpg" alt="Mountains" title="Mountains">
             <div class="text">Add a description of the image here</div>
