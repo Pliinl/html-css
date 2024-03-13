@@ -1,38 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Demo CSS Grid</title>
 </head>
+
 <body>
-<style>
-    .container {
-        display: grid;
-        background-color: rgb(78, 110, 223);
-        grid-template-columns: auto auto auto;
-        gap: 10px;
-    }
+    <style>
+        body {
+            background: #F1F0EE;
+            margin: 0;
+        }
 
-    .item {
-        background-color: white;
-        padding: 20px;
-        text-align: center;
-    }
+        .container {
+            display: grid;
+            background-color: white;
+            grid-template-rows: 50px 300px 500px 200px;
+            grid-template-areas:
+                " home home home home"
+                "demo demo demo demo"
+                "about about about find"
+                "contact contact contact find"
+                "footer footer footer footer "
+            ;
+            gap: 5px;
+            font-size: 12px;
+            text-align: center;
+            color: rgb(1, 65, 65);
+            font-weight: 1000;
+        }
 
-    .i1 {
-        grid-column: 1/4;
-        background-color: rgb(67, 67, 215);
-    }
-    
+        .item {
+            background-color: white;
+        }
 
-</style>
+        div ul {
+            list-style: none;
+            font-size: 16px;
+            font-weight: bolder;
+            float: left;
+        }
 
-   <div class="container">
-    <div class="item i1">1</div>
-    <div class="item i2">2</div>
-    <div class="item i3">3</div>
-    <div class="item i4">4</div>
-   </div>
+        li {
+            display: inline-block;
+        }
+
+        li a {
+            color: white;
+        }
+
+        a:hover {
+            color: rgb(243, 80, 80);
+        }
+
+        .i1 {
+            grid-area: home;
+            background-color: rgb(63, 83, 217);
+        }
+
+        .i2 {
+            grid-area: demo;
+            background-color: rgb(239, 240, 240);
+        }
+
+        .i2 p {
+            text-align: left;
+        }
+
+        div h2 {
+            font-weight: bolder;
+        }
+
+        .i3 {
+            grid-area: about;
+            background-color: rgb(200, 197, 195);
+        }
+
+        .i4 {
+            grid-area: contact;
+            background-color: rgb(164, 163, 160);
+        }
+
+        .i5 {
+            grid-area: find;
+            background-color: rgb(190, 195, 198);
+        }
+
+        .i6 {
+            grid-area: footer;
+            background-color: rgb(98, 153, 243);
+        }
+    </style>
+
+    <div class="container">
+        <div class="item i1">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+
+        </div>
+        <div class="item i2">
+            <h2>A Demo Site CSS Grid</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque pariatur possimus alias quod ratione
+                incidunt dicta assumenda repudiandae optio eveniet, quisquam fuga! Nam eaque fuga similique quia, esse
+                non libero?</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo libero doloremque, eum quis laudantium hic
+                iste ab sed ipsum veniam, quam dolor rem cupiditate corrupti aliquam repudiandae officia soluta impedit!
+            </p>
+        </div>
+        <div class="item i3">
+            <h2>About</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt voluptatem reprehenderit non. Magni
+                sit alias quia, vel quidem autem quos optio quam at porro aliquid necessitatibus aut et eos nulla.</p>
+        </div>
+        <div class="item i4">
+            <h2>Contact</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi consequuntur magnam ipsum, commodi quam,
+                non dolorem numquam veritatis, qui nam voluptas asperiores neque magni. Placeat, natus reprehenderit.
+                Fugit, voluptatum commodi.</p>
+        </div>
+        <div class="item i5">
+            <h2 >Find Me on Social Media</h2>
+            <p><a href="#">Facebook</a></p>
+        </div>
+        <div class="item i6">
+            <footer>Copyight 2024 <a href="#">BW2109R1</a></footer>
+        </div>
+    </div>
 </body>
+
 </html>
