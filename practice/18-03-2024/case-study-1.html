@@ -5,10 +5,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Case Study</title>
-    <link rel="stylesheet" href="./case-study-1.css">
 </head>
 
 <body>
+
+    <style>
+        /* services */
+#service {
+    width: 100%;
+    padding: 70px 0;
+    background-color: #efefef;
+}
+.service-box {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: auto;
+}
+.single-service {
+    flex-basis: 48%;
+    text-align: center;
+    border-radius: 7px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+.single-service img {
+    width: 100%;
+    border-radius: 7px;
+}
+.overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    border-radius: 7px;
+    cursor: pointer;
+   background: linear-gradient(0,0,0,0,5), #009688;
+   transition: 1s;
+}
+.single-service:hover .overlay {
+    opacity: 1;
+}
+.service-desc {
+    width: 80%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    opacity: 0;
+    transform: translateX(-50%);
+    transition: 1s;
+}
+hr {
+    background: #fff;
+    height: 2px;
+    border: 0;
+    margin: 15px auto;
+    width: 60%;
+}
+.single-desc p {
+    font-size: 14px;
+}
+.single-service:hover .single-desc {
+    bottom: 40%;
+    opacity: 1;
+}
+
+    </style>
     <!--services -->
     <section id="service">
         <div class="title-text">
