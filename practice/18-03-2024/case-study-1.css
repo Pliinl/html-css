@@ -1,0 +1,117 @@
+
+ * {
+    margin: 0;
+    padding: 0;
+ }
+ /* banner */
+ #banner {
+    background: linear-gradient(0,0,0,0,5), #009688  url("images/banner.jpg");
+   background-color: cover;
+   background-position: center;
+   height: 100vh;
+ }
+ .logo {
+    width: 140px;
+    position: absolute;
+    top: 0%;
+    left: 10%;
+ }
+ .banner-text {
+    color: #d21a1a;
+    padding-top: 180px;
+ }
+ .banner-text h1 {
+    font-size: 130px;
+ }
+ .banner-text p {
+    font-size: 20px;
+    font-style: italic;
+ }
+ .banner-btn {
+    margin: 70px auto 0;
+    
+ }
+ .banner-btn a {
+    width: 150px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 10px;
+    padding: 0;
+    color: #644747;
+    border: .5px solid #a88686;
+    transition: color 0.5s;
+ }
+.banner-btn:hover {
+    color: #000;
+}
+
+ /* services */
+ #service {
+    width: 100%;
+    padding: 70px 0;
+    background-color: #efefef;
+}
+
+.service-box {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: auto;
+}
+
+.single-service {
+    flex-basis: 48%;
+    text-align: center;
+    border-radius: 7px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.single-service img {
+    width: 100%;
+    border-radius: 7px;
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    border-radius: 7px;
+    cursor: pointer;
+    background: linear-gradient(0, 0, 0, 0, 5), #009688;
+    transition: 1s;
+}
+
+.single-service:hover .overlay {
+    opacity: 1;
+}
+
+.service-desc {
+    width: 80%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    opacity: 0;
+    transform: translateX(-50%);
+    transition: 1s;
+}
+
+hr {
+    background: #fff;
+    height: 2px;
+    border: 0;
+    margin: 15px auto;
+    width: 60%;
+}
+
+.single-desc p {
+    font-size: 14px;
+}
+
+.single-service:hover .single-desc {
+    bottom: 40%;
+    opacity: 1;
+}
+/* end services */
